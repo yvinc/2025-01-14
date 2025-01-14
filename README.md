@@ -31,3 +31,21 @@
             -   The message tells you that it goes into an '**auto-merging**' process for the process, trying to stick everything together.
 
             -   The **ONLY** time this auto-merging process would **stop** and **fail** is when the changes were made on the same line of the same location.
+
+        -   The local file will reflect the change or you can call `nano README.md` (i.e., on VScode), for example to see the both conflicting histories.
+
+            -   Then you need to manually choose and fix the file [or]{.underline} (if working on VS code) click 'accept current change' or other 'accept' options to resolve the conflict.
+
+                -   Delete all the extra '===' lines and markers.
+
+        -   Then save the fixed file & run `git status`.
+
+            -   `git status` will tell you to use `git add <file>` to resolve the conflict.
+
+            -   Then use `git commit -m` to conclude the merge!
+
+            -   Finally, we `git push origin main`!
+
+            -   Case closed!
+
+            -   🐈‍⬛
